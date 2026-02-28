@@ -177,3 +177,6 @@ internal_hvh/Prerelease/DLLMain.obj
 .vs/internal_hvh/v17/Solution.VC.db
 .vs/internal_hvh/v17/fileList.bin
 .vs/internal_hvh/v17/DocumentLayout.backup.json
+.vs/internal_hvh/v17/ipch/AutoPCH/fa288ffed49a5f/UTIL.ipch
+.vs/internal_hvh/v17/ipch/AutoPCH/1f79dad4f7839d70/CON_VARS.ipch
+.vs/internal_hvh/v17/ipch/AutoPCH/12e528c8fe56adb5/MENU.ipch
