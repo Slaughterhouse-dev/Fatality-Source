@@ -38,7 +38,10 @@
 #ifndef INTERFACES_H
 #define INTERFACES_H
 
-#define make_interface( name, type, offset_name, module_name ) inline auto name = []() __attribute__((always_inline)) { return encrypted_ptr<type>(( type* ) ( make_offset( module_name, offset_name ) )); }
+#define make_interface( name, type, offset_name, module_name ) inline auto name = []() __attribute__((always_inline)) { 
+	return encrypted_ptr<type>(( type* ) ( make_offset( module_name, offset_name ) )); 
+}
+
 #define make_interface_no_enc( name, type, offset_name, module_name ) inline auto name = []() __attribute__((always_inline)) { return( type* ) ( make_offset( module_name, offset_name ) ); }
 #define make_interface_alt( name, type, offset_name, module_name ) inline auto name = []() __attribute__((always_inline)) { return encrypted_ptr<type>(*( type** ) ( make_offset( module_name, offset_name )) ); }
 #define make_interface_alt_no_enc( name, type, offset_name, module_name ) inline auto name = []() __attribute__((always_inline)) { return *( type** ) ( make_offset( module_name, offset_name ) ); }
